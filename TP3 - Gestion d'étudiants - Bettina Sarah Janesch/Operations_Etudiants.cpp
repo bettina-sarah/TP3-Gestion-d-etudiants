@@ -23,3 +23,10 @@ static int CodeEtudiantCourant()
 	return CodeCourant;
 	//CodeCourant++;
 }
+
+void AjouterUnEtudiant()
+{
+	cout << "==========" << NomCollege << "==========";
+	cout<<"\n\nEntrez le nom du nouvel étudiant"
+
+}

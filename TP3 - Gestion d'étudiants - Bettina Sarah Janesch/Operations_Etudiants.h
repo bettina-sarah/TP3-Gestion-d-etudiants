@@ -7,7 +7,16 @@
 
 using namespace std;
 
+struct Etudiant_s
+{
+	int IDEtudiant;
+	string NomComplet;
+	string Programme;
+};
 
+static int CodeEtudiantCourant();
+
+void AjouterUnEtudiant();
 
 
 #endif
