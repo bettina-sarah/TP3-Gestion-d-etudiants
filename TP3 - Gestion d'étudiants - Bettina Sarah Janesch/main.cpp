@@ -1,7 +1,13 @@
 #include <iostream>
 #include <conio.h>
+#include "Operations_Etudiants.h";
 
 using namespace std;
+
+extern const string NomCollege;
+
+extern int NombreEtudiantsInscrits; // var globale d'ailleurs
+
 
 void main(void) {
 	setlocale(LC_ALL, "fr_CA");
