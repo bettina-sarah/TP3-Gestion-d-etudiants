@@ -18,5 +18,9 @@ static int CodeEtudiantCourant();
 
 void AjouterUnEtudiant();
 
+void AfficherUnEtudiant(int CodeEtudiant);
+
+void AfficherTousEtudiants();
+
 
 #endif

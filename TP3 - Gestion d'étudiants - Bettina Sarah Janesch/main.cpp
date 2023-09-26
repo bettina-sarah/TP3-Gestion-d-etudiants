@@ -34,26 +34,23 @@ void main(void) {
 		switch (ChoixMenu) {
 		case '1':
 			system("cls");
-
-
-
+			AjouterUnEtudiant();
 			cout << "Appuyez sur une touche pour continuer...";
 			_getche();
 			break;
 		case '2':
 			system("cls");
-
-
-
-			cout << "Appuyez sur une touche pour continuer...";
+			int CodeDesire;
+			cout << "\nEntrez l'identifiant de l'étudiant a afficher";
+			cin >> CodeDesire;
+			AfficherUnEtudiant(CodeDesire);
+			cout << "\n\nAppuyez sur une touche pour continuer...";
 			_getche();
 			break;
 		case '3':
 			system("cls");
-
-
-
-			cout << "Appuyez sur une touche pour continuer...";
+			AfficherTousEtudiants();
+			cout << "\n\nAppuyez sur une touche pour continuer...";
 			_getche();
 			break;
 		case 'q':
