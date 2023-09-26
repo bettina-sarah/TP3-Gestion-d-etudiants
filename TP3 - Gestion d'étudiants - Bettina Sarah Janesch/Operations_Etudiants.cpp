@@ -39,12 +39,12 @@ void AjouterUnEtudiant()
 void AfficherUnEtudiant(int CodeEtudiant)
 {
 	setlocale(LC_ALL, "fr_CA");
-	cout << "\n+++ Informations de l'étudiant choisi +++ \n";
 	
-	for (int i = 0; i < ListeEtudiants.size(); i++)
+	for (int i = 0; i < ListeEtudiants.size(); i++) // en cas d'erreur du code inseré ?? rien mettre comme erreur?
 	{
 		if (ListeEtudiants[i].IDEtudiant == CodeEtudiant)
 		{
+			cout << "\n+++ Informations de l'étudiant choisi +++ \n";
 			cout << "\n\nNom de l'étudiant: " << ListeEtudiants[i].NomComplet << "\tProgramme dans lequel l'étudiant est inscrit: " << ListeEtudiants[i].Programme;
 		}
 	}

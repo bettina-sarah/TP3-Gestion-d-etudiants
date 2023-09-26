@@ -22,6 +22,11 @@ void main(void) {
 		system("cls");
 
 		// Afficher le menu
+
+		cout << "==========" << NomCollege << "=========="
+			"\nNombre d'étudiants inscrits: " << NombreEtudiantsInscrits;
+		cout << "\n==============================\n\n";
+
 		cout << "========= MENU DE GESTION D'ÉTUDIANTS ET DE COURS =========" << endl;
 		cout << "\t1- Créer un étudiant" << endl;
 		cout << "\t2- Afficher les informations d’un étudiant" << endl;
