@@ -13,7 +13,7 @@ static string NomDirecteur = "Directeur Cool";
 
 //!!tous les types et structures et les données (vecteurs) des étudiants ne devraient être visible que dans le module des étudiants.
 
-vector <Etudiant_s> ListeEtudiants;
+static vector <Etudiant_s> ListeEtudiants;
 
 static int CodeEtudiantCourant()
 {
@@ -28,9 +28,10 @@ void AjouterUnEtudiant()
 	string ProgrammeEtudiant;
 	cout << "==========" << NomCollege << "=========="
 		"\n\nEntrez le nom du nouvel étudiant";
-	cin >> NomEtudiant;
+	cin.ignore();
+	getline(cin, NomEtudiant);
 	cout << "\nEntrez le nom du programme";
-	cin >> ProgrammeEtudiant;
+	getline(cin, ProgrammeEtudiant);
 	Etudiant_s NouvelEtudiant = {CodeEtudiantCourant(),NomEtudiant, ProgrammeEtudiant};
 	ListeEtudiants.push_back(NouvelEtudiant);
 	NombreEtudiantsInscrits++;
@@ -46,8 +47,10 @@ void AfficherUnEtudiant(int CodeEtudiant)
 		{
 			cout << "\n+++ Informations de l'étudiant choisi +++ \n";
 			cout << "\n\nNom de l'étudiant: " << ListeEtudiants[i].NomComplet << "\tProgramme dans lequel l'étudiant est inscrit: " << ListeEtudiants[i].Programme;
+			return;
 		}
 	}
+	cout << "\nMauvais identifiant rentré";
 }
 
 void AfficherTousEtudiants()
